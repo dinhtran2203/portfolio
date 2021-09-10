@@ -73,11 +73,12 @@
 }
 
 /* Home Page */
-.home{
+.home {
 	display: flex;
-	background: url("/static/images/background/1.jpg") no-repeat center  /*image no-repeat center */;
-	background-size: 120% 110%;
-	height: 10vh;
+	background: url("/static/images/background/1.jpg") no-repeat center /*image no-repeat center */;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
 	color: #fff;
 	min-height: 500px;
 	font-family: "Gill Sans", sans-serif;
