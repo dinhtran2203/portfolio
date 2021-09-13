@@ -7,18 +7,19 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
-.navbar{
+.navbar {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	padding: 20px 0;
+	padding: 8px 0;
 	font-family: "Noto Sans JP", sans-serif;
+	background-color: #000;
 	transition: all 0.3s ease;
 }
 
 .navbar.sticky{
 	padding: 5px 0;
-	background: #00BFFF; /* deepskyblue */
+	background: black; /* deepskyblue */
 }
 
 .navbar .max_width{
@@ -75,17 +76,16 @@
 /* Home Page */
 .home {
 	display: flex;
-	background: url("/static/images/background/1.jpg") no-repeat center /*image no-repeat center */;
-	background-position: center center;
-	background-attachment: fixed;
+	background: url("/static/images/background/1.jpg") no-repeat center center fixed /*image no-repeat center */;
 	background-size: cover;
 	color: #fff;
-	min-height: 500px;
+	min-height: 20%;
 	font-family: "Gill Sans", sans-serif;
+	padding: 90%;
 }
 
 .home .max_width{
-	margin: auto 0 auto 40px;
+	margin: auto 0 auto 20px;
 }
 
 .home .home-content .text-1 {
@@ -125,12 +125,13 @@
 section {
 	padding: 100px 0;
 }
-.about, .skills, .contact, footer{
+.about, .skills, .contact, .projects, footer{
 	font-family: 'Roboto', sans-serif;
 }
 .about .about-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.project .proj-content{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -293,6 +294,13 @@ section .title::after{
 	background: none;
 }
 
+/* Services section styling */
+.project{
+	background:
+}
+.projects .title::after{
+	content:"What I have done";
+}
 
 /* contact section styling */
 .contact .title:after{
@@ -431,9 +439,9 @@ footer span a:hover{
 		z-index: 999;
 	}
 
-		.menu-btn i.active:before {
-			content: "\f00d";
-		}
+	.menu-btn i.active:before {
+		content: "\f00d";
+	}
 
 	.navbar .menu {
 		position: fixed;
@@ -447,19 +455,19 @@ footer span a:hover{
 		transition: all 0.3s ease;
 	}
 
-		.navbar .menu.active {
-			left: 0;
-		}
+	.navbar .menu.active {
+		left: 0;
+	}
 
-		.navbar .menu li {
-			display: block;
-		}
+	.navbar .menu li {
+		display: block;
+	}
 
-			.navbar .menu li a {
-				display: inline-block;
-				margin: 20px 0;
-				font-size: 25px;
-			}
+	.navbar .menu li a {
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+	}
 
 	.home .home-content .text-2 {
 		font-size: 70px;

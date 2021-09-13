@@ -8,12 +8,7 @@ def Contact_view(request, *args, **kwargs):
 	return render(request, "contact.html", {})
 
 def About_view(request, *args, **kwargs):
-	my_context = {
-		"my_text": "this is about me",
-		"my_num" : "123"
-	}
-
-	return render(request, "about.html", my_context)
+	return render(request, "about.html", {})
 
 def Project_view(request, *args, **kwargs):
 	return render(request, "project.html", {})
