@@ -25,4 +25,5 @@ urlpatterns = [
     path('data/', data_detail_view, name='data'),
     path('about/', About_view, name='about'),
     path('admin/', admin.site.urls),
+    
 ]
