@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'mydjangoporfolio.herokuapp.com',
-    'http://127.0.0.1:8000/',
+    '127.0.0.1',
 ]
 
 
