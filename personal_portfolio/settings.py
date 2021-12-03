@@ -32,6 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'mydjangoporfolio.herokuapp.com',
+    'http://127.0.0.1:8000/',
 ]
 
 
@@ -127,7 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 
 # Default primary key field type
@@ -137,5 +138,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATICFILES_DIRS = [
-    BASE_DIR ,
+    BASE_DIR / 'static',
 ]
