@@ -123,7 +123,6 @@
 
 /* All similar styling items */
 section {
-	padding: 110px 10%;
 }
 .about, .skills, .contact, .projects, footer{
 	font-family: 'Roboto', sans-serif;
@@ -151,16 +150,16 @@ section .title::before{
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
-	width: 180px;
-	height: 3px;
+	width: 300px;
+	height: 4px;
 	background: #111;
 	transform: translate(-50%);
 }
 section .title::after{
 	position: absolute;
-	bottom: -13px;
+	bottom: -14px;
 	left: 50%;
-	font-size: 20px;
+	font-size: 19px;
 	color: #00bfff;
 	padding: 5px;
 	background: #fff;
@@ -168,6 +167,10 @@ section .title::after{
 }
 
 /* About section */
+.about {
+	padding-bottom: 50px;
+	padding-top: 110px;
+}
 .about .title::after{
 	content:"Who I am";
 }
@@ -186,9 +189,10 @@ section .title::after{
  }
 
 .about .about-content .right .text{
-	font-size: 25px;
-	font-weight: 600;
+	font-size: 23px;
+	font-weight: 750;
 	margin-bottom: 10px;
+	font-family: 'Source Sans pro', sans-serif;
 }
 
 .about .about-content .right .text span{
@@ -196,7 +200,7 @@ section .title::after{
 }
 
 .about .about-content .right .text p{
-	text-align: justify;
+	text-align: left;
 }
 .about .about-content .right .text a{
 	display: inline-block;
@@ -204,6 +208,7 @@ section .title::after{
 	color: #fff;
 	font-size: 20px;
 	font-weight: 500;
+	font-family: 'Signika Negative', sans-serif;
 	padding: 10px 30px;
 	margin-top: 20px;
 	border-radius: 6px;
@@ -215,6 +220,9 @@ section .title::after{
 	background: none;
 }
 /* Skills sections styling */
+.skills{
+	padding-bottom: 80px;
+}
 .skills .title::after{
 	content: "What I know";
 }
@@ -298,6 +306,8 @@ section .title::after{
 /* Services section styling */
 .projects{
 	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 .projects .title::after{
 	content:"What I have done";
@@ -305,19 +315,32 @@ section .title::after{
 .projects .proj-content .card{
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top: 15%;
+	margin-top: 8%;
 	background: #00bfff;
 	text-align: center;
 	border-radius: 6px;
-	padding: 20px 25px;
+	padding: 30px 40px;
 }
-.projects .proj-content .card i{
-	font-size: 50px;
-	background-image: url("/static/images/projects/1.jpeg");
+
+.projects .proj-content a{
+	color: black;
 }
+
+.projects .proj-content .card p{
+	padding-top: 2%;
+}
+
+.projects .proj-content .card box-1{
+	height: 100%;
+}
+.projects .proj-content .card img{
+	height: 100px;
+}
+
 /* contact section styling */
 .contact{
-	height: 100vh;
+	padding: 110px 8%;
+	width: 100%;
 }
 
 .contact .title:after{
@@ -389,8 +412,8 @@ section .title::after{
 	resize: none;
 }
 .contact .right .button{
-	height: 47px;
-	width: 170px;
+	height: 45px;
+	width: 200px;
 }
 .contact .right .button button{
 	width: 100%;
@@ -398,15 +421,19 @@ section .title::after{
 	border: 2px solid #00bfff;
 	background: deepskyblue;
 	color: white;
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 25px;
+	font-weight: 800;
+	font-family: 'Signika Negative', sans-serif;
 	border-radius: 6px;
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
+.contact .right .button a{
+	color: white;
+}
 .contact .right .button :hover{
 	color: deepskyblue;
-	background: none;
+	background: #33fffb;
 }
 
 /* contact section styling */
@@ -419,6 +446,9 @@ footer{
 footer span a{
 	color: #00bfff;
 	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 19px;
+	font-weight: bold;
 }
 footer span a:hover{
 	text-decoration: underline;
