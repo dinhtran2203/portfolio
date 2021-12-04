@@ -122,8 +122,7 @@
 }
 
 /* All similar styling items */
-section {
-}
+
 .about, .skills, .contact, .projects, footer{
 	font-family: 'Roboto', sans-serif;
 }
@@ -639,7 +638,7 @@ footer span a:hover{
 	}
 }
 
-@media (max-width: 740px) {
+@media (max-width: 670px) {
 	.max_width {
 		padding: 0 23px;
 	}
