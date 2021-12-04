@@ -12,3 +12,13 @@ def About_view(request, *args, **kwargs):
 
 def Project_view(request, *args, **kwargs):
 	return render(request, "project.html", {})
+
+def Elec_project(request, *args, **kwargs):
+	return render(request, "electrical-design.html", {})
+
+def Prog_project(request, *args, **kwargs):
+    return render(request, "programing.html", {})
+
+def DYI_project(request, *args, **kwargs):
+    return render(request, "DYI.html", {})
+		
