@@ -20,7 +20,7 @@ from projects_app.views import data_detail_view
 
 urlpatterns = [
     path('', Homepage_view, name='home'),
-    path('project/elc-design/', Elec_project, name='elec-design'),
+    path('project/elcdesign/', Elec_project, name='elec-design'),
     path('project/prg/', Prog_project, name='elec-design'),
     path('project/dyi/', DYI_project, name='elec-design'),
     path('contact/', Contact_view, name='contact'),
